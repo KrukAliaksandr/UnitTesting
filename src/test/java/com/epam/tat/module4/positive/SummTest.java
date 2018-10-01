@@ -76,5 +76,15 @@ public class SummTest {
 Calculator calculatorFortTest = new Calculator();
     Assert.assertEquals(calculatorFortTest.sum(data.get(0),data.get(1)),data.get(0) + data.get(1));
 }
+    @Test(dataProvider = "ProviderWithMaximumValues",expectedExceptions = Exception.class)
+    public void DoubleMaxValuesTest(ArrayList<Double> data) {
+        Calculator calculatorFortTest = new Calculator();
+        Assert.assertEquals(calculatorFortTest.sub(data.get(0), data.get(1)), data.get(0) - data.get(1));
+    }
+    @Test(dataProvider = "ProviderWithMinimumValues",expectedExceptions = Exception.class)
+    public void DoubleMinValuesTest(ArrayList<Double> data) {
+        Calculator calculatorFortTest = new Calculator();
+        Assert.assertEquals(calculatorFortTest.sub(data.get(0), data.get(1)), data.get(0) - data.get(1));
+    }
 
 }
