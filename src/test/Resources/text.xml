@@ -1,19 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="true" name="Smoke Trigonometric Functions Test">
+<suite parallel="true" name="SmokeTest">
     <test name="Trigonometric Functions">
         <groups>
             <run>
                 <include name="trigonometric_functions" />
             </run>
         </groups>
-        <!--<classes>-->
-        <!--<class name="com.epam.tat.module4.tests.testng.TgCalcTest" />-->
-        <!--<class name="com.epam.tat.module4.tests.testng.CtgCalcTest" />-->
-        <!--<class name="com.epam.tat.module4.tests.testng.CosCalcTest" />-->
-        <!--<class name="com.epam.tat.module4.tests.testng.SinCalcTest" />-->
-        <!--</classes>-->
         <packages>
-            <package name="com.epam.tat.module4.tests" />
+            <package name="testng" />
         </packages>
     </test>
     <test name="Basic Calc Functions">
@@ -23,7 +17,18 @@
             </run>
         </groups>
         <packages>
-            <package name="com.epam.tat.module4.tests" />
+            <package name="testng" />
         </packages>
     </test>
+    <test name="Advanced Calculator Functions">
+        <groups>
+            <run>
+                <include name="advanced_calc_functions" />
+            </run>
+        </groups>
+        <packages>
+            <package name="testng" />
+        </packages>
+    </test>
+
 </suite>

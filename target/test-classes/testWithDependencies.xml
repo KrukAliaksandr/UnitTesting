@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test With Dependencies">
+    <test name="Run one group after another">
+        <groups>
+            <dependencies>
+                <group name="advanced_calc_functions" depends-on="basic_calc_functions" />
+            </dependencies>
+        </groups>
+        <packages>
+            <package name="com.epam.tat.module4.tests.testng"/>
+        </packages>
+    </test>
+</suite>
