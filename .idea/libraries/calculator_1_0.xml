@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="calculator-1.0">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../calculator-1.0.jar!/" />
+      <root url="jar://D:/IDEA_setup/calculator-1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

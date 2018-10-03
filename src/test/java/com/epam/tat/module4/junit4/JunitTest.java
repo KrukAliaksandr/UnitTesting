@@ -1,4 +1,4 @@
-package junit;
+package com.epam.tat.module4.junit4;
 
 import com.epam.tat.module4.Calculator;
 import org.junit.*;

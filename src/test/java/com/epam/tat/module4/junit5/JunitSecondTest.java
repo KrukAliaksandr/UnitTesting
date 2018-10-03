@@ -1,4 +1,4 @@
-package junit;
+package com.epam.tat.module4.junit5;
 
 import com.epam.tat.module4.Calculator;
 import org.junit.jupiter.api.AfterEach;
